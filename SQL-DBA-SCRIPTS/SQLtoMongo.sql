@@ -3,7 +3,7 @@ select count(*) from Employees
 select count(*) from Products
 select count(*) from Sales
 
-Select top 10
+Select 
 (Employees.FirstName+' '+Employees.LastName) as Sales_person,
 (Customers.FirstName+' '+Customers.LastName) as Customer_name,
 Products.[Name] as Product_name,
@@ -17,4 +17,5 @@ on  Sales.CustomerID=Customers.CustomerID
 inner join Products
 on Sales.ProductID=Products.ProductID
 group by Products.[Name],Employees.FirstName,Employees.LastName,Sales.Quantity,Products.Price,Customers.FirstName,Customers.LastName
-for json path
+--for json path
+for json auto
