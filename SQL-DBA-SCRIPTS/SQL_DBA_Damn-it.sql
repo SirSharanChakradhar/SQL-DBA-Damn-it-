@@ -7,7 +7,7 @@ EXEC sp_who
 EXEC sp_who2
 EXEC sp_BlitzInMemoryOLTP
 EXEC sp_BlitzIndex --per db
-EXEC sp_BlitzIndex @mode = 2 
+EXEC sp_BlitzIndex @mode = 4 
 EXEC sp_BlitzCache
 EXEC dbo.sp_BlitzIndex @DatabaseName='test1a', @SchemaName='dbo', @TableName='Sales';
 ALTER TABLE [MPAU].[dbo].[PFCICFRC] REBUILD;
